@@ -105,3 +105,28 @@ By default, the app runs on http://localhost:5173.
 |                   | `/`            | POST   | Create new transaction               | 
 |                   | `/:id`         | PUT    | Update transaction                   | 
 |                   | `/:id`         | DELETE | Delete transaction                   |
+
+---
+
+## Challenges Faced & Solutions
+
+- **Authentication Management**: Integrating JWT across both frontend and backend was tricky at first. Careful token handling and middleware setup helped ensure secure route access.
+- **Edit & Update Operations**: Implementing editable transaction modals with pre-filled data required managing controlled inputs and validation carefully.
+- **Frontend-Backend Sync**: Maintaining consistent state between client and server required thoughtful use of `useEffect`, conditional rendering, and toast notifications for feedback.
+
+---
+
+## Learnings
+
+- Understood the **full cycle of MERN stack development**, from backend API creation to frontend integration.
+- Gained hands-on experience with **form validation** using Formik, Yup, and React Hook Form.
+- Learned how to handle **protected routes**, **token-based authentication**, and **state management** in React.
+- Improved skills in **debugging**, **code modularization**, and managing **multi-component architecture**.
+
+---
+
+## Suggestions for Future Improvements
+
+- 🔐 **Implement password reset via email** using nodemailer and a secure token system.
+- 🌐 **Deploy the app** on platforms like Vercel (frontend) and Render/Heroku (backend).
+- 📱 **Add responsiveness for mobile** with improved styling using Tailwind or Bootstrap.
