@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #402d1a;
+    --light-color: #b98348;
+    --bg-color: #faf6f2;
+    --text-color: #1a1a1a;
+    --card-bg: #ffffff;
+    --border-color: #ddd;
+    --input-bg: #fff;
+    --accent-color:#402d1a;
+}
+
+body.dark {
+    --primary-color: #d2b48c;
+    --light-color: #1c629b;
+    --bg-color: #474747;
+    --text-color: #ffffff;
+    --card-bg: #c2c2c2;
+    --border-color: #444;
+    --input-bg: #ffffff;
+    --accent-color: #02112a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.add-transaction-wrapper {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    overflow-y: auto;
+}
+
+.add-transaction-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    color: #000000;;
+}
+
+.transaction-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.transaction-form input[type="text"],
+.transaction-form input[type="number"],
+.transaction-form input[type="date"] {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    color: #000000;
+    font-size: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    justify-content: space-evenly;
+}
+
+.category-wrapper {
+    position: relative;
+}
+
+.category-wrapper input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    color: #000000;
+    font-size: 1rem;
+}
+
+.category-dropdown {
+    position: absolute;
+    list-style: none;
+    top: 105%;
+    left: 0;
+    width: 100%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-top: 4px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-dropdown li {
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.category-dropdown li:hover {
+    background-color: var(--light-color);
+    color: white;
+}
+
+.badge {
+    /* background-color: var(--light-color); */
+    /* color: white; */
+    padding: 3px 8px;
+    /* border-radius: 12px; */
+    font-size: 0.85rem;
+}
+
+.new-category {
+    font-style: italic;
+    color: #000000;}
+
+.submit-btn {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: var(--light-color);
+}
+
+.form-error {
+    font-size: 0.85rem;
+    color: red;
+    margin-top: 4px;
+}

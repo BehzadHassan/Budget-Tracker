@@ -1,0 +1,100 @@
+:root {
+    --profile-primary: #402d1a;
+    --profile-accent: #b98348;
+    --profile-bg: #ffffff;
+    --profile-text: #1a1a1a;
+    --profile-border: #ddd;
+    --profile-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+    --profile-primary: #4e6bcc;
+    --profile-accent: #4e6bcc;
+    --profile-bg: #7e7e7e;
+    --profile-text: #000000;
+    --profile-border: #444;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    /* background-color: var(--profile-bg); */
+    padding: 40px 20px;
+    color: var(--profile-text);
+}
+
+.profile-form {
+    background-color: var(--profile-bg);
+    border: 1px solid var(--profile-border);
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: var(--profile-shadow);
+}
+
+.form-heading {
+    text-align: center;
+    color: var(--profile-primary);
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: var(--profile-accent);
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid var(--profile-border);
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: var(--profile-text);
+}
+
+.form-group input:focus {
+    outline: 2px solid var(--profile-accent);
+    border-color: var(--profile-primary);
+}
+
+.form-group.readonly .readonly-field {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    border: 1px solid var(--profile-border);
+    color: var(--profile-text);
+}
+
+.submit-btn {
+    background-color: var(--profile-accent);
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--profile-primary);
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}

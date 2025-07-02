@@ -1,0 +1,71 @@
+
+:root
+{
+    --dropdown-background: #fff;
+    --dropdown-border: #ddd;
+    --dropdown-text-color: #1a1a1a;
+    --dropdown-hover-background: #b98348;
+    --dropdown-hover-text-color: #000;
+}
+
+body.dark
+{
+    --dropdown-background: #02112a;
+    --dropdown-border: #444;
+    --dropdown-text-color: #f4f4f4;
+    --dropdown-hover-background: #1c629b;
+    --dropdown-hover-text-color: #fff;
+}
+
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.avatar {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    background: var(--dropdown-background);
+    color: var(--dropdown-text-color);
+    border-radius: 25px;
+    user-select: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    margin: 15px 30px 0px 0px;
+    background: var(--dropdown-background);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    /* overflow: hidden; */
+    z-index: 1000;
+    min-width: 160px;
+    font-size: 14px;
+}
+
+.dropdown-menu div {
+    color: var(--dropdown-text-color);
+    background: var(--dropdown-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    padding: 5px 10px;
+    margin: 7px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu div:hover {
+    background-color: var(--dropdown-hover-background);
+    color: var(--dropdown-hover-text-color);
+}
